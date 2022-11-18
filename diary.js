@@ -7,10 +7,11 @@ function makePassword(){
   }
  }
 function unlock(){
+  var unlockUsername=prompt("What is your username?")
   var ulock=prompt("What is the password?")
-  if(ulock==inputPassword){
+  if(ulock==inputPassword && unlockUsername==inputUsername){
     alert("The diary has been unlocked")
   }else{
- alert("This is not the password")
+    alert("This is not the password")
   }
  }
