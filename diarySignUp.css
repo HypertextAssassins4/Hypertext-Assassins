@@ -89,7 +89,7 @@ input[type=text], input[type=password] {
     color:#f44336;
 }
 
-/*Displays back and submit buttons inside of the box, instead of outside*/
+/*Displays back and submit buttons inside of the form box, instead of outside*/
 .submit_Back:after {
     content:"";
     clear: both;
