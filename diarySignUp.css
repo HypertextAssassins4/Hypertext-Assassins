@@ -1,0 +1,97 @@
+/*WELCOME PAGE*/
+body{
+    text-align: center;
+    background-color: rgb(7, 7, 51);
+    color: white;
+}
+
+h1 {
+    font-size:80px;
+    font-family: cursive Arial, Helvetica, sans-serif;
+}
+
+#header {
+    font-size:50px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+p {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-small;
+    color:darkgray;
+}
+
+/*SIGN UP PAGE*/
+/*Styles the input boxes on the sign up form*/
+input[type=text], input[type=password] {
+    width:auto;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid rgb(7, 7, 51);
+}
+
+/*Styles the sign up and login buttons on welcome page*/
+#btns {
+    padding: 5px;
+    cursor: pointer;
+    text-align: right;
+    margin:5px;
+}
+
+
+/*Styles the back and submit buttons on the form*/
+.goBack, .submit {
+    float:right;
+    margin: 5px;
+    width:auto;
+    padding: 5px;
+    background-color: azure;
+}
+
+/*Hides sign up form, until the sign up button is clicked*/
+.box {
+    display: none;
+    position: fixed;
+    left:25%; /*Ensures that the form doesn't start at the left-edge of device screen*/
+    top: 0;/*Ensures that the form starts from the top of the page*/
+    width:50%;
+    height: auto;
+    overflow: auto;
+    color:rgb(7, 7, 51);
+    padding-top: 50px;
+}
+
+/*Ensures that user is able to distinguish the sign up form from the welcome page content*/
+.signUpF {
+    background-color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid white;
+    margin-bottom: 25px;
+}
+
+/*This styles the close button (X)*/
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+/*Changes the color of the close button (x) when mouse is hovered over it*/
+.close:hover {
+    color:#f44336;
+}
+
+/*Displays back and submit buttons inside of the box, instead of outside*/
+.submit_Back:after {
+    content:"";
+    clear: both;
+    display: table; 
+}
