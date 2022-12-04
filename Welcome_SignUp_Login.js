@@ -79,7 +79,7 @@ function logIn(correctInput) {
 }
 
 function mainPage() {
-    location.href="mainPage.html";
+    location.href="./index.html";
 }
 
 
