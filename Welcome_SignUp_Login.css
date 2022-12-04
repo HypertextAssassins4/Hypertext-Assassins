@@ -27,13 +27,19 @@ footer {
     color:darkgray;
 }
 
-/*SIGN UP PAGE*/
+/*SIGN UP / LOGIN PAGE*/
 /*Styles the input boxes on the sign up form*/
-input[type=text], input[type=password] {
+#usrname, #pswrd, #pswrdRe, #urname, #pwrd {
     width:auto;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: 1px solid rgb(7, 7, 51);
+    background: grey;
+}
+
+#usrname:hover, #pswrd:hover, #pswrdRe:hover, #urname:hover, #pwrd:hover {
+    border-color: blueviolet;
+    background: white;
 }
 
 /*Styles the sign up and login buttons on welcome page*/
@@ -45,8 +51,8 @@ input[type=text], input[type=password] {
 }
 
 
-/*Styles the back and submit buttons on the form*/
-.goBack, .submit {
+/*Styles the back and submit buttons on the forms*/
+#goBack, #submit {
     float:right;
     margin: 5px;
     width:auto;
@@ -54,10 +60,10 @@ input[type=text], input[type=password] {
     background-color: azure;
 }
 
-/*Hides sign up form, until the sign up button is clicked*/
-.box {
+/*Hides forms, until the sign up/login button is clicked*/
+.boxSign, .boxLog {
     display: none;
-    position: fixed;
+    position: fixed; /*Fixes position to the center of the page*/
     left:25%; /*Ensures that the form doesn't start at the left-edge of device screen*/
     top: 0;/*Ensures that the form starts from the top of the page*/
     width:50%;
@@ -67,8 +73,8 @@ input[type=text], input[type=password] {
     padding-top: 50px;
 }
 
-/*Ensures that user is able to distinguish the sign up form from the welcome page content*/
-.signUpF {
+/*Ensures that user is able to distinguish the sign up/login form from the welcome page content*/
+.signUpF, .loginF {
     background-color: white;
     margin: 5% auto 15% auto;
     border: 1px solid white;
@@ -89,7 +95,7 @@ input[type=text], input[type=password] {
     color:#f44336;
 }
 
-/*Displays back and submit buttons inside of the form box, instead of outside*/
+/*Displays back and submit buttons inside of the box, instead of outside*/
 .submit_Back:after {
     content:"";
     clear: both;
