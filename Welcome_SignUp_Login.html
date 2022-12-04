@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Diary</title>
+    <link rel="stylesheet" href="Welcome_SignUp_Login.css" type="text/css">
+</head>
+<body>
+  <div id="btns">
+        <button id="signup" onclick="document.getElementById('boxSign').style.display='block'" style="width:auto;">Sign up</button>
+        <button id="login" onclick="document.getElementById('boxLog').style.display='block'" style="width:auto;">Login</button>
+    </div>
+    
+  <!--WELCOME PAGE-->
+    <h1>Secret Diary</h1>
+    <p id="header">Welcome to Secret Diary</p>
+    <p>Thank you for visiting Secret Diary. As you have probably guessed, secret diary is an online journal. 
+        You can do anything in this diary. You can story start writing your best selling novel, jot down your darkest secrets 
+        and desires or maybe even plot the murder of the next person to annoy you. The best part about it is that no one will be none the wiser.
+        Sign up now and join the fun. </p>
+    <img src=""><!--Insert screen of our diary entry page-->
+    
+    
+    <!--SIGN UP FORM-->
+    <div id="boxSign" class="boxSign">
+        <span onclick="document.getElementById('boxSign').style.display='none'" class="close" title="Close Form">&times;</span>
+        <form class="signUpF" onsubmit="return confirmPassword()">
+            <div class="content">
+                <!--Title of form-->
+                <h1>Sign Up</h1>
+                <div id="errMsg"></div> <!--Object to output an error message if condition are not met-->
+                <!--Input field for username-->
+                <p> <span class="userInfo">Create username:</span>
+                    <input id="usrname" type="text"  name="user" required minlength="6" maxlength="10">
+                </p>
+                <!--Input field for password, when clicked, checks if user name is valid-->
+                <p> <span class="userInfo">Create password:</span>
+                    <input id="pswrd" type="password" name="psw" onclick="checkUsername()" required minlength="8" maxlength="16">
+                </p>
+                <!--Input field for confirming password, when clicked, checks if password is valid-->
+                <p><span class="userInfo">Confirm password:</span>
+                    <input id="pswrdRe" type="password" onclick="checkPassword()" required minlength="8" maxlength="16">
+                </p>
+                <!--Buttons to submit and create account or to exit out of form-->
+                <div class="submit_Back">
+                    <button id="goBack" onclick="document.getElementById('boxSign').style.display='none'">Back</button>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--LOGIN FORM-->
+    <div id="boxLog" class="boxLog">
+        <span onclick="document.getElementById('boxLog').style.display='none'" class="close" title="Close Form">&times;</span>
+        <form class="loginF" onsubmit="storeInfo()">
+            <div class="content">
+                <!--Title of form-->
+                <h1>Login</h1>
+                <!--Input field for username-->
+                <p> <span class="userInfo">Username:</span>
+                    <input id="urname" type="text" placeholder="Enter username" required>
+                </p>
+                <!--Input field for password-->
+                <p> <span class="userInfo">Password:</span>
+                    <input id="pwrd" type="password" placeholder="Enter password" required>
+                </p>
+                <!--Buttons to submit and log into account or to exit out of form-->
+                <div class="submit_Back">
+                    <button id="goBack" onclick="document.getElementById('boxLog').style.display='none'">Back</button>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--linking javascript file to html-->
+    <script src="Welcome_SignUp_Login.js"></script>
+</body>
+<footer>&copy; Authors: Ivan Marcus, Hunain Sheikh, Zhewen Li & Destiny Lashley</footer>
+</html>
