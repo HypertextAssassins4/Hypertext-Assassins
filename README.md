@@ -1,5 +1,5 @@
 # Hypertext-Assassins
-This is a web-based password protected diary. 
+This is a web-based password protected diary, created using html, css, javascript and jquery. 
 
 The project description is to add in a button that will show information in the webpage, which will be coming from the server. 
 For any of the information to be shown the user must input the correct password when prompted. When the user puts the correct 
