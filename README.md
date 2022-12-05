@@ -4,8 +4,8 @@ This is a web-based password protected diary, created using html, css, javascrip
 The project description is to add in a button that will show information in the webpage, which will be coming from the server. 
 For any of the information to be shown the user must input the correct password when prompted. When the user puts the correct 
 password in, the information will be shown as a ‘display area’. For every new diary input, there must be a way to input the 
-information that is saved to the server, so that the next time the diary is opened the information will be shown. There must 
-also be a button that will lock the diary which will remove the diary information from the webpage.
+information that is saved to the server, so that the next time the diary is opened the information will be shown. There is 
+also a button where you can log out from the diary at all times
 
 The function requirements used to accomplish this are:
 - There should be two input boxes: the first one is for username and the second one is for password. 
